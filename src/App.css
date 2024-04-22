@@ -1,0 +1,38 @@
+.title {
+  margin-top: 5px;
+ 
+  font-size: 24px;
+  align-items: center;
+}
+.main-title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+.wiki {
+  color: #0d907a;
+}
+
+
+.pagination {
+  display: flex;
+}
+.active {
+  border-bottom: 2px solid #0d907a ;
+  font-weight: bold;
+  color: #0d907a;
+}
+.main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text {
+  color: #0d907a;
+}
+.cards {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
