@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import './card.css'
 
-const Card = ({results}) => {
+const Card = ({results , page}) => {
     let display;
    console.log(results)
     if(results) {
@@ -10,7 +11,7 @@ const Card = ({results}) => {
             let {id, image , name , location, status } = x;
             return (
             <>
-                <div key={id}  className='column-4 position-relative' >
+                <Link to={`${page}${id}`} key={id}  className='column-4 position-relative' >
                     <div className='card'>
                         <div className='image'>
                             <img src={image} alt={name} />
@@ -55,7 +56,7 @@ const Card = ({results}) => {
                         </div>
 
                     </div>
-                </div>
+                </Link>
 
                         
                        

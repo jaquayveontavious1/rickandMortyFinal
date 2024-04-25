@@ -49,7 +49,7 @@ const Episodes = () => {
         </div>
         <div className='cards column-8'>
           <h3>
-            <Card  results={results}/>
+            <Card page="/episodes/" results={results}/>
           </h3>
         </div>
         

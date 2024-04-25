@@ -11,6 +11,9 @@ import Navbar from './assets/components/navbar';
 import Episodes from '../pages/episodes';
 import Location from '../pages/location';
 
+import CardDetails from './assets/components/cardDetails';
+
+
 function App () {
   return (
     <> 
@@ -21,8 +24,16 @@ function App () {
             </div>
             <Routes>
               <Route path='/' element={<Home />} />
+              <Route path='/:id' element= {<CardDetails />} />
+
               <Route path='/episodes' element={<Episodes />} />
+              <Route path='/episodes/:id' element= {<CardDetails />} />
+
+
               <Route path='/location' element={<Location />} />
+
+              
+             
             </Routes>
           </Router>
         </div>
@@ -77,7 +88,7 @@ const Home = () =>  {
         </div>
         <div>
           {/**Card Component */}
-          <Card results={results} />
+          <Card page="/" results={results} />
           
         </div>
         <div>
